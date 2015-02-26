@@ -1,8 +1,8 @@
 class Person < ActiveRecord::Base
 
-  has_many :assignments
-  has_many :locations, through: :assignments
-  has_many :roles, through: :assignments
+  has_many :assignments, dependent: :destroy
+  has_many :locations, through: :assignments, dependent: :destroy
+
 
   validates :last_name, presence: :true
   validates :title, presence: { message: " or first name can\'t be blank"}, unless: :first_name?
