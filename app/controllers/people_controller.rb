@@ -34,6 +34,12 @@ class PeopleController < ApplicationController
     end
   end
 
+  def destroy
+    @person = Person.find(params[:id])
+    @person.destroy
+    redirect_to people_path
+  end
+
   private
 
   def person_params

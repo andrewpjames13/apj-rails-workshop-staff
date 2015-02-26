@@ -13,14 +13,6 @@ Note: email/password combinations for existing users populated by `bin/setup` ca
 ## Stories
 
 
-**Users must enter a title/last_name or first_name/last_name**
-
-```
-While adding or editing a person
-Users must enter either a title/last_name or a first_name/last_name
-Otherwise they get a validation message and the person isn't saved
-```
-
 **Users can assign people to locations**
 
 ```
