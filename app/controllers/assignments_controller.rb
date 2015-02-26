@@ -19,7 +19,13 @@ class AssignmentsController < ApplicationController
     end
   end
 
+  def edit
+    @person = Person.find(params[:person_id])
+    @assignment = Assignment.find(params[:id])
+  end
+
   def update
+    @person = Person.find(params[:person_id])
     @assignment = Assignment.find(params[:id])
     if @assignment.update(assignment_params)
       redirect_to person_path(@person)
