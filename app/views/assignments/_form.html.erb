@@ -1,5 +1,18 @@
 <%= form_for [@person, @assignment] do |f| %>
 
+<% if @assignment.errors.any? %>
+<div id="error_explanation", class="alert alert-danger">
+
+  <h2><% pluralize(@assignment.errors.count, "error") %> prohibited this from being saved:</h2>
+
+  <ul>
+    <% @assignment.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
 <div class= "form-group">
   <%= f.label :location_id %>
   <%= f.collection_select :location_id, Location.all, :id, :name, {include_blank: "Select a location"}, class: "form-control" %>

@@ -16,10 +16,6 @@ Note: email/password combinations for existing users populated by `bin/setup` ca
 **Users can assign people to locations**
 
 ```
-Go to person show page
-Click on "+ Add Location"
-Fill out form
-View assignment on person show page
 Assignments must have both a location and a role
 ```
 
