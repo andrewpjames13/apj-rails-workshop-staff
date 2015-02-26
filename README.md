@@ -13,15 +13,6 @@ Note: email/password combinations for existing users populated by `bin/setup` ca
 ## Stories
 
 
-```
-
-**Users can edit people**
-
-```
-From the person show page
-Users should be abel to click an edit link and see the edit form for a person
-```
-
 **Users must enter a title/last_name or first_name/last_name**
 
 ```
