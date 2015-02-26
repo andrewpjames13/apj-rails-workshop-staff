@@ -13,35 +13,7 @@ Note: email/password combinations for existing users populated by `bin/setup` ca
 ## Stories
 
 
-**Users can assign people to locations**
 
-```
-Assignments must have both a location and a role
-```
-
-**People cannot be assigned to the same location with the same role**
-
-```
-A person can be assigned to "Northeast" more than once, as long as the role is unique
-But a person cannot be assigned as "Sales Manager" to "Northeast" twice
-```
-
-**Users can edit assignments**
-
-```
-Go to person show page
-Click on the "edit" link by an assignment
-Fill out form
-View updated assignment on person show page
-```
-
-**Users can delete assignments**
-
-```
-Go to person show page
-Click on the "delete" link by an assignment
-Javascript prompt that says "Are you sure?" should appear
-If user clicks "OK" then it should be deleted
 ```
 
 **Users see assignment count on the home page**
